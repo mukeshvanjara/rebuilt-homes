@@ -1,0 +1,45 @@
+<header class="bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo / Brand -->
+      <div class="flex items-center flex-shrink-0">
+        <a routerLink="/" class="flex items-center">
+          <img src="images/logo.jpg" alt="Brickwave logo" class="h-12 w-auto">
+          <div class="ml-3 hidden sm:block">
+            <div class="font-bold text-lg text-gray-800">BRICKWAVE</div>
+            <div class="text-xs text-gray-500">Trust in every Brick</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Center navigation (shown on md+) -->
+      <nav class="hidden md:flex space-x-8 items-center" aria-label="Primary navigation">
+        <a routerLink="/" (click)="setTitle('Home')">Home</a>
+        <a routerLink="/about" (click)="setTitle('About')">About</a>
+        <a routerLink="/contact" (click)="setTitle('Contact')">Contact</a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button type="button" aria-label="Open main menu" aria-expanded="false" class="p-2 rounded-md text-gray-700 hover:bg-gray-100">
+          <!-- simple hamburger icon -->
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu (toggle with JS) -->
+  <div class="md:hidden" id="mobile-menu" hidden>
+    <nav class="px-4 pt-2 pb-4 space-y-1" aria-label="Mobile navigation">
+      <a routerLink="/home" (click)="setTitle('Home')" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Home</a>
+      <a routerLink="/about" (click)="setTitle('About')" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">About</a>
+      <!-- <a routerLink="/services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Services</a>
+      <a routerLink="/projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Projects</a>
+      <a routerLink="/associates" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Associates</a> -->
+      <a routerLink="/contact" (click)="setTitle('Contact')" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Contact</a>
+    </nav>
+  </div>
+</header>
