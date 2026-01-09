@@ -1,5 +1,283 @@
-<div class="app-container">
-  <div class="content-container">
-    <h1>Dashboard Works! </h1>
-  </div>
+<!-- Dashboard section styled with Tailwind CSS classes -->
+<!-- Dashboard / Home-like component — Tailwind CSS structure matching attached design -->
+<div class="dashboard-page bg-gray-50 text-gray-800">
+  <main class="max-w-7xl mx-auto px-6 py-16">
+    <!-- About section: two-column layout, left text, right stacked images with years badge -->
+    <section id="about" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <!-- Left column: heading + long paragraph -->
+      <div class="lg:col-span-6">
+        <h3 class="text-sky-500 font-bold text-lg">About Brickwave</h3>
+        <p class="mt-4 text-sm leading-relaxed text-gray-600">
+          Brickwave is a forward-thinking project management consultancy focused on redevelopment.
+          We streamline complex redevelopment projects with transparency, strong technical
+          coordination and timely delivery — serving housing societies, developers and investors in
+          Mumbai.
+        </p>
+        <p class="mt-4 text-sm leading-relaxed text-gray-600">
+          Our services cover planning, approvals, contractor management and quality assurance. We
+          prioritise stakeholder clarity and sustainable outcomes across every stage of the project.
+        </p>
+      </div>
+
+      <!-- Right column: stacked images with frames and central 'years expertise' badge -->
+      <div class="lg:col-span-6 relative">
+        <!-- Stacked images container -->
+        <div class="w-full h-full flex justify-end items-start">
+          <div class="relative w-80 lg:w-96">
+            <!-- Top small image -->
+            <div
+              class="absolute -top-6 -right-6 w-36 h-28 bg-white shadow-lg border-4 border-sky-200 overflow-hidden"
+            >
+              <img src="images/investment-1.jpg" alt="office" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- Middle framed image (main) -->
+            <div
+              class="absolute top-12 right-10 w-56 h-44 bg-white shadow-2xl border-4 border-sky-300 overflow-hidden"
+            >
+              <img src="images/investment-2.jpg" alt="team" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- Bottom large image -->
+            <div
+              class="relative mt-28 w-80 h-52 bg-white shadow-lg border border-gray-100 overflow-hidden"
+            >
+              <img src="images/faq-1.jpg" alt="building" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white text-gray-700 py-16 px-6 md:px-12">
+      <div class="max-w-6xl mx-auto">
+        <!-- 2-column layout: left info block + right main content -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <!-- Left: Why Choose Brickwave (narrow column) -->
+          <aside class="lg:col-span-4">
+            <h2 class="text-2xl lg:text-3xl font-extrabold text-blue-400 leading-tight">
+              Why Choose Brickwave as Redevelopment Consultants
+            </h2>
+            <p class="mt-4 text-sm text-gray-500">
+              Well-known for delivering commitment, Brickwave offers reliable and transparent
+              Project Management Consulting Services that simplify the entire redevelopment process.
+              With a personalised approach, we prioritise accountability and community-centric
+              outcomes.
+            </p>
+
+            <ul class="mt-6 space-y-3 text-sm text-gray-600">
+              <li class="flex items-start">
+                <svg
+                  class="w-4 h-4 text-blue-400 mt-1 mr-3 flex-shrink-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>End-to-end project planning and execution</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-4 h-4 text-blue-400 mt-1 mr-3 flex-shrink-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>100% transparency and timely communication</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-4 h-4 text-blue-400 mt-1 mr-3 flex-shrink-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Expert coordination with architects, contractors, and authorities</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-4 h-4 text-blue-400 mt-1 mr-3 flex-shrink-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Strong focus on quality control and compliance</span>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-4 h-4 text-blue-400 mt-1 mr-3 flex-shrink-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Dedicated team ensuring on-time project delivery</span>
+              </li>
+            </ul>
+          </aside>
+
+          <!-- Right: Main centered heading, icon, description and two cards -->
+          <div class="lg:col-span-8">
+            <div class="text-center">
+              <h3 class="text-blue-400 uppercase tracking-widest text-sm font-semibold">
+                Insight & Opinion
+              </h3>
+              <h1 class="mt-4 text-3xl md:text-5xl font-extrabold text-blue-400 leading-tight">
+                Our Project Management Consulting Services
+              </h1>
+              <p class="mt-6 text-sm md:text-base text-gray-500 max-w-3xl mx-auto">
+                Project Management Consulting Services play a crucial role in ensuring that real
+                estate and redevelopment projects move smoothly. By offering structured planning,
+                technical expertise, and strategic ideas, redevelopment services help stakeholders
+                avoid delays, control costs, and maintain quality at every stage.
+              </p>
+            </div>
+
+            <!-- Center icon -->
+            <div class="flex justify-center mt-8">
+              <div
+                class="w-16 h-16 flex items-center justify-center rounded-full border-2 border-blue-200 text-blue-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 7l9-4 9 4v8a2 2 0 01-2 2h-2v-6H7v6H5a2 2 0 01-2-2V7z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+              <div
+                class="border-2 border-blue-200 rounded-lg p-8 flex flex-col justify-between bg-white"
+              >
+                <div>
+                  <div class="flex items-center justify-center mb-4">
+                    <div class="p-4 rounded-full bg-blue-50 text-blue-400">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-8 w-8"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M3 7h18M7 7v12a2 2 0 002 2h6a2 2 0 002-2V7"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h4 class="text-lg font-bold text-blue-400 text-center">
+                    Services for Societies
+                  </h4>
+                  <p class="mt-4 text-sm text-gray-500 text-center">
+                    At Brickwave, we aim to provide comprehensive, end-to-end services to assist
+                    societies through every phase of their self-redevelopment.
+                  </p>
+                </div>
+                <div class="mt-6 flex justify-center">
+                  <a routerLink="/services-for-societies" (click)="setTitle('Services For Societies')" 
+                    class="bg-blue-400 hover:bg-blue-500 text-white font-semibold px-5 py-2 rounded shadow inline-block"
+                    role="button"
+                  >
+                    Know More
+                  </a>
+                </div>
+              </div>
+
+              <div
+                class="border-2 border-blue-200 rounded-lg p-8 flex flex-col justify-between bg-white"
+              >
+                <div>
+                  <div class="flex items-center justify-center mb-4">
+                    <div class="p-4 rounded-full bg-blue-50 text-blue-400">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-8 w-8"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M12 3v18m9-9H3"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h4 class="text-lg font-bold text-blue-400 text-center">
+                    Services for Developers
+                  </h4>
+                  <p class="mt-4 text-sm text-gray-500 text-center">
+                    At Brickwave, we offer a wide range of services for developers to streamline and
+                    simplify the redevelopment process.
+                  </p>
+                </div>
+                <div class="mt-6 flex justify-center">
+                  <a routerLink="/services-for-developer" (click)="setTitle('Services For Developer')"
+                    class="bg-blue-400 hover:bg-blue-500 text-white font-semibold px-5 py-2 rounded shadow inline-block"
+                    role="button"
+                  >
+                    Know More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </div>

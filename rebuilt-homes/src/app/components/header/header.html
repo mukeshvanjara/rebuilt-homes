@@ -16,6 +16,20 @@
       <nav class="hidden md:flex space-x-8 items-center" aria-label="Primary navigation">
         <a routerLink="/" (click)="setTitle('Home')">Home</a>
         <a routerLink="/about" (click)="setTitle('About')">About</a>
+        <div class="relative group">
+          <button type="button" class="flex items-center space-x-2 focus:outline-none" aria-haspopup="true" aria-expanded="false">
+            <span (click)="$event.preventDefault(); setTitle('Services')">Services</span>
+            <svg class="h-4 w-4 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+
+          <!-- Dropdown: show on hover or keyboard focus -->
+          <div class="absolute left-0 mt-2 w-44 bg-white border rounded-md shadow-lg opacity-0 invisible transform -translate-y-1 transition-all group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 z-10">
+            <a routerLink="/services-for-societies" (click)="setTitle('Services For Societies')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Services For Societies</a>
+            <a routerLink="/services-for-developer" (click)="setTitle('Services For Developer')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Services For Developer</a>
+          </div>
+        </div>
         <a routerLink="/contact" (click)="setTitle('Contact')">Contact</a>
       </nav>
 
